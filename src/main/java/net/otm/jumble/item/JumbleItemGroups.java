@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.otm.jumble.Jumble;
+import net.otm.jumble.block.JumbleBlocks;
 
 public class JumbleItemGroups {
 
@@ -15,6 +16,7 @@ public class JumbleItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.jumble"))
                     .icon(() ->new ItemStack(JumbleItems.CELESTIUM)).entries((displayContext, entries) -> {
                         entries.add(JumbleItems.CELESTIUM);
+                        entries.add(JumbleBlocks.CELESTIUM_ORE);
                     }).build());
     public static void registerItemGroups() {
         Jumble.LOGGER.info("Registering Item Groups for " + Jumble.MOD_ID);

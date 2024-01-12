@@ -2,6 +2,7 @@ package net.otm.jumble;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.otm.jumble.block.JumbleBlocks;
 import net.otm.jumble.item.JumbleItemGroups;
 import net.otm.jumble.item.JumbleItems;
 import org.slf4j.Logger;
@@ -17,6 +18,7 @@ public class Jumble implements ModInitializer {
 
 		JumbleItemGroups.registerItemGroups();
 		JumbleItems.registerJumbleItems();
+		JumbleBlocks.registerJumbleBlocks();
 
 		LOGGER.info("Hello Fabric world!");
 	}

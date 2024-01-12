@@ -1,5 +1,7 @@
 {
   "item.jumble.celestium": "Celestium",
 
-  "itemgroup.jumble": "Jumble"
+  "itemgroup.jumble": "Jumble",
+
+  "block.jumble.celestium_ore": "Celestium Ore"
 }
