@@ -1,7 +1,10 @@
 {
   "item.jumble.celestium": "Celestium",
+  "item.jumble.celestium_ingot": "Celestium Ingot",
 
   "itemgroup.jumble": "Jumble",
 
-  "block.jumble.celestium_ore": "Celestium Ore"
+  "block.jumble.celestium_ore": "Celestium Ore",
+  "block.jumble.celestium_block": "Block of Celestium"
+
 }

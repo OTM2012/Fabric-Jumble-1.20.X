@@ -14,6 +14,8 @@ import net.otm.jumble.Jumble;
 public class JumbleItems {
 
     public static final Item CELESTIUM = registerItem("celestium",new Item(new FabricItemSettings()));
+    public static final Item CELESTIUM_INGOT = registerItem("celestium_ingot",new Item(new FabricItemSettings()));
+
 
     private static void addItemsToIngredientTabItemsGroup(FabricItemGroupEntries entries) {
         entries.add(CELESTIUM);

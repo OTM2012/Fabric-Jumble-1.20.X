@@ -16,7 +16,9 @@ public class JumbleItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.jumble"))
                     .icon(() ->new ItemStack(JumbleItems.CELESTIUM)).entries((displayContext, entries) -> {
                         entries.add(JumbleItems.CELESTIUM);
+                        entries.add(JumbleItems.CELESTIUM_INGOT);
                         entries.add(JumbleBlocks.CELESTIUM_ORE);
+                        entries.add(JumbleBlocks.CELESTIUM_BLOCK);
                     }).build());
     public static void registerItemGroups() {
         Jumble.LOGGER.info("Registering Item Groups for " + Jumble.MOD_ID);
