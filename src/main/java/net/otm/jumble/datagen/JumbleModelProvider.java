@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 import net.otm.jumble.block.JumbleBlocks;
 import net.otm.jumble.item.JumbleItems;
 
@@ -30,6 +31,11 @@ public class JumbleModelProvider extends FabricModelProvider {
         itemModelGenerator.register(JumbleItems.CELESTIUM_SWORD, Models.HANDHELD);
         itemModelGenerator.register(JumbleItems.CELESTIUM_HOE, Models.HANDHELD);
         itemModelGenerator.register(JumbleItems.CELESTIUM_UPGRADE_SMITHING_TEMPLATE, Models.GENERATED);
+        itemModelGenerator.registerArmor(((ArmorItem) JumbleItems.CELESTIUM_HELMET));
+        itemModelGenerator.registerArmor(((ArmorItem) JumbleItems.CELESTIUM_CHESTPLATE));
+        itemModelGenerator.registerArmor(((ArmorItem) JumbleItems.CELESTIUM_LEGGINGS));
+        itemModelGenerator.registerArmor(((ArmorItem) JumbleItems.CELESTIUM_BOOTS));
+
 
     }
 }

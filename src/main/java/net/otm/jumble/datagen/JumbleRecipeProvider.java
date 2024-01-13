@@ -45,5 +45,16 @@ public class JumbleRecipeProvider extends FabricRecipeProvider {
         SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(JumbleItems.CELESTIUM_UPGRADE_SMITHING_TEMPLATE), Ingredient.ofItems(Items.DIAMOND_HOE),Ingredient.ofItems(JumbleItems.CELESTIUM_INGOT), RecipeCategory.MISC, JumbleItems.CELESTIUM_HOE)
                 .criterion(hasItem(JumbleItems.CELESTIUM_INGOT), conditionsFromItem(JumbleItems.CELESTIUM_INGOT)).offerTo(exporter, new Identifier(Jumble.MOD_ID, "celestium_hoe_smithing"));
 
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(JumbleItems.CELESTIUM_UPGRADE_SMITHING_TEMPLATE), Ingredient.ofItems(Items.DIAMOND_HELMET),Ingredient.ofItems(JumbleItems.CELESTIUM_INGOT), RecipeCategory.MISC, JumbleItems.CELESTIUM_HELMET)
+                .criterion(hasItem(JumbleItems.CELESTIUM_INGOT), conditionsFromItem(JumbleItems.CELESTIUM_INGOT)).offerTo(exporter, new Identifier(Jumble.MOD_ID, "celestium_helmet_smithing"));
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(JumbleItems.CELESTIUM_UPGRADE_SMITHING_TEMPLATE), Ingredient.ofItems(Items.DIAMOND_CHESTPLATE),Ingredient.ofItems(JumbleItems.CELESTIUM_INGOT), RecipeCategory.MISC, JumbleItems.CELESTIUM_CHESTPLATE)
+                .criterion(hasItem(JumbleItems.CELESTIUM_INGOT), conditionsFromItem(JumbleItems.CELESTIUM_INGOT)).offerTo(exporter, new Identifier(Jumble.MOD_ID, "celestium_chestplate_smithing"));
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(JumbleItems.CELESTIUM_UPGRADE_SMITHING_TEMPLATE), Ingredient.ofItems(Items.DIAMOND_LEGGINGS),Ingredient.ofItems(JumbleItems.CELESTIUM_INGOT), RecipeCategory.MISC, JumbleItems.CELESTIUM_LEGGINGS)
+                .criterion(hasItem(JumbleItems.CELESTIUM_INGOT), conditionsFromItem(JumbleItems.CELESTIUM_INGOT)).offerTo(exporter, new Identifier(Jumble.MOD_ID, "celestium_leggings_smithing"));
+
+        SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(JumbleItems.CELESTIUM_UPGRADE_SMITHING_TEMPLATE), Ingredient.ofItems(Items.DIAMOND_BOOTS),Ingredient.ofItems(JumbleItems.CELESTIUM_INGOT), RecipeCategory.MISC, JumbleItems.CELESTIUM_BOOTS)
+                .criterion(hasItem(JumbleItems.CELESTIUM_INGOT), conditionsFromItem(JumbleItems.CELESTIUM_INGOT)).offerTo(exporter, new Identifier(Jumble.MOD_ID, "celestium_boots_smithing"));
     }
 }

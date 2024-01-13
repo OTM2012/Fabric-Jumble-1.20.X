@@ -22,7 +22,10 @@ public class JumbleItems {
 
     public static final Item CELESTIUM_UPGRADE_SMITHING_TEMPLATE = registerItem("celestium_upgrade_smithing_template",new Item(new FabricItemSettings()));
 
-
+    public static final Item CELESTIUM_HELMET = registerItem("celestium_helmet",new ArmorItem(JumbleArmorMaterials.CELESTIUM, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    public static final Item CELESTIUM_CHESTPLATE = registerItem("celestium_chestplate",new ArmorItem(JumbleArmorMaterials.CELESTIUM, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item CELESTIUM_LEGGINGS = registerItem("celestium_leggings",new ArmorItem(JumbleArmorMaterials.CELESTIUM, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item CELESTIUM_BOOTS = registerItem("celestium_boots",new ArmorItem(JumbleArmorMaterials.CELESTIUM, ArmorItem.Type.BOOTS, new FabricItemSettings()));
 
 
     private static void addItemsToIngredientTabItemsGroup(FabricItemGroupEntries entries) {

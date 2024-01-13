@@ -25,6 +25,10 @@ public class JumbleItemGroups {
                         entries.add(JumbleItems.CELESTIUM_SWORD);
                         entries.add(JumbleItems.CELESTIUM_HOE);
                         entries.add(JumbleItems.CELESTIUM_UPGRADE_SMITHING_TEMPLATE);
+                        entries.add(JumbleItems.CELESTIUM_HELMET);
+                        entries.add(JumbleItems.CELESTIUM_CHESTPLATE);
+                        entries.add(JumbleItems.CELESTIUM_LEGGINGS);
+                        entries.add(JumbleItems.CELESTIUM_BOOTS);
                     }).build());
     public static void registerItemGroups() {
         Jumble.LOGGER.info("Registering Item Groups for " + Jumble.MOD_ID);
