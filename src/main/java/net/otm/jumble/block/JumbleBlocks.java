@@ -9,12 +9,13 @@ import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.otm.jumble.Jumble;
 
 public class JumbleBlocks {
 
-    public static final Block CELESTIUM_ORE = registerBlock("celestium_ore", new Block(FabricBlockSettings.copyOf(Blocks.ANCIENT_DEBRIS)));
-    public static final Block CELESTIUM_BLOCK = registerBlock("celestium_block", new Block(FabricBlockSettings.copyOf(Blocks.NETHERITE_BLOCK)));
+    public static final Block CELESTIUM_ORE = registerBlock("celestium_ore", new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(2f)));
+    public static final Block CELESTIUM_BLOCK = registerBlock("celestium_block", new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(2f)));
 
 
     private static Block registerBlock(String name, Block block) {
