@@ -19,7 +19,5 @@ public class Jumble implements ModInitializer {
 		JumbleItemGroups.registerItemGroups();
 		JumbleItems.registerJumbleItems();
 		JumbleBlocks.registerJumbleBlocks();
-
-		LOGGER.info("Hello Fabric world!");
 	}
 }

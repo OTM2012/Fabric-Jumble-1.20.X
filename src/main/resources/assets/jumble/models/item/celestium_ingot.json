@@ -1,6 +1,0 @@
-{
-  "parent": "item/generated",
-  "textures": {
-    "layer0": "jumble:item/celestium_ingot"
-  }
-}

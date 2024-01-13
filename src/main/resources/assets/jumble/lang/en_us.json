@@ -1,6 +1,12 @@
 {
   "item.jumble.celestium": "Celestium",
   "item.jumble.celestium_ingot": "Celestium Ingot",
+  "item.jumble.celestium_pickaxe": "Celestium Pickaxe",
+  "item.jumble.celestium_axe": "Celestium Axe",
+  "item.jumble.celestium_shovel": "Celestium Shovel",
+  "item.jumble.celestium_sword": "Celestium Sword",
+  "item.jumble.celestium_hoe": "Celestium Hoe",
+  "item.jumble.celestium_upgrade_smithing_template": "Celestium Upgrade Smithing Template",
 
   "itemgroup.jumble": "Jumble",
 

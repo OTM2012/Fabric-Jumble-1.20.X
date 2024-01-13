@@ -19,6 +19,12 @@ public class JumbleItemGroups {
                         entries.add(JumbleItems.CELESTIUM_INGOT);
                         entries.add(JumbleBlocks.CELESTIUM_ORE);
                         entries.add(JumbleBlocks.CELESTIUM_BLOCK);
+                        entries.add(JumbleItems.CELESTIUM_PICKAXE);
+                        entries.add(JumbleItems.CELESTIUM_AXE);
+                        entries.add(JumbleItems.CELESTIUM_SHOVEL);
+                        entries.add(JumbleItems.CELESTIUM_SWORD);
+                        entries.add(JumbleItems.CELESTIUM_HOE);
+                        entries.add(JumbleItems.CELESTIUM_UPGRADE_SMITHING_TEMPLATE);
                     }).build());
     public static void registerItemGroups() {
         Jumble.LOGGER.info("Registering Item Groups for " + Jumble.MOD_ID);
