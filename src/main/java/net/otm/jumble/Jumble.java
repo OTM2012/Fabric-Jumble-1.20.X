@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.otm.jumble.block.JumbleBlocks;
 import net.otm.jumble.item.JumbleItemGroups;
 import net.otm.jumble.item.JumbleItems;
+import net.otm.jumble.util.JumbleLootTableModifiers;
 import net.otm.jumble.world.gen.JumbleOreGeneration;
 import net.otm.jumble.world.gen.JumbleWorldGeneration;
 import org.slf4j.Logger;
@@ -22,5 +23,6 @@ public class Jumble implements ModInitializer {
 		JumbleItems.registerJumbleItems();
 		JumbleBlocks.registerJumbleBlocks();
 		JumbleWorldGeneration.generateModWorldGen();
+		JumbleLootTableModifiers.modifyLootTables();
 	}
 }
