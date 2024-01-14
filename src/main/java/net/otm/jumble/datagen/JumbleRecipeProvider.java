@@ -2,9 +2,9 @@ package net.otm.jumble.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.data.server.recipe.SmithingTransformRecipeJsonBuilder;
 import net.minecraft.item.*;
 import net.minecraft.recipe.Ingredient;
@@ -13,14 +13,13 @@ import net.minecraft.util.Identifier;
 import net.otm.jumble.Jumble;
 import net.otm.jumble.block.JumbleBlocks;
 import net.otm.jumble.item.JumbleItems;
-import org.apache.logging.log4j.core.appender.mom.JmsAppender;
 
 import java.util.List;
 import java.util.function.Consumer;
 
 public class JumbleRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> CELESTIUM_SMELTABLE = List.of(
-        JumbleBlocks.CELESTIUM_BLOCK, JumbleBlocks.CELESTIUM_ORE);
+            JumbleBlocks.CELESTIUM_BLOCK, JumbleBlocks.CELESTIUM_ORE);
 
     public JumbleRecipeProvider(FabricDataOutput output) {
         super(output);
@@ -38,6 +37,20 @@ public class JumbleRecipeProvider extends FabricRecipeProvider {
                 FabricRecipeProvider.conditionsFromItem(JumbleItems.CELESTIUM_INGOT)).criterion(FabricRecipeProvider.hasItem(JumbleItems.CELESTIUM),
                 FabricRecipeProvider.conditionsFromItem(JumbleItems.CELESTIUM)).criterion(FabricRecipeProvider.hasItem(Items.SHULKER_SHELL),
                 FabricRecipeProvider.conditionsFromItem(Items.SHULKER_SHELL));*/
+
+        //Celestium Upgrade Smithing Template Duplication Recipe
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,JumbleItems.CELESTIUM_UPGRADE_SMITHING_TEMPLATE,2)
+                .pattern("ABA")
+                .pattern("ACA")
+                .pattern("AAA")
+                .input('A', Items.DIAMOND)
+                .input('B', JumbleItems.CELESTIUM_UPGRADE_SMITHING_TEMPLATE)
+                .input('C', Blocks.END_STONE)
+                .criterion(hasItem(Items.DIAMOND), conditionsFromItem(Items.DIAMOND))
+                .criterion(hasItem(JumbleItems.CELESTIUM_UPGRADE_SMITHING_TEMPLATE), conditionsFromItem(JumbleItems.CELESTIUM_UPGRADE_SMITHING_TEMPLATE))
+                .criterion(hasItem(Blocks.END_STONE), conditionsFromItem(Blocks.END_STONE)).offerTo(exporter, new Identifier(getRecipeName(JumbleItems.CELESTIUM_UPGRADE_SMITHING_TEMPLATE)));
+
+        //Celestium Smithing Upgrades
 
         SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(JumbleItems.CELESTIUM_UPGRADE_SMITHING_TEMPLATE), Ingredient.ofItems(Items.DIAMOND_PICKAXE),Ingredient.ofItems(JumbleBlocks.CELESTIUM_BLOCK), RecipeCategory.MISC, JumbleItems.CELESTIUM_PICKAXE)
                 .criterion(hasItem(JumbleBlocks.CELESTIUM_BLOCK), conditionsFromItem(JumbleBlocks.CELESTIUM_BLOCK)).offerTo(exporter, new Identifier(Jumble.MOD_ID, "celestium_pickaxe_smithing"));

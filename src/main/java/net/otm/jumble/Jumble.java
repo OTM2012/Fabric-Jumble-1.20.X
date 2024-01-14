@@ -3,6 +3,7 @@ package net.otm.jumble;
 import net.fabricmc.api.ModInitializer;
 
 import net.otm.jumble.block.JumbleBlocks;
+import net.otm.jumble.datagen.JumbleRecipeProvider;
 import net.otm.jumble.item.JumbleItemGroups;
 import net.otm.jumble.item.JumbleItems;
 import net.otm.jumble.util.JumbleLootTableModifiers;
