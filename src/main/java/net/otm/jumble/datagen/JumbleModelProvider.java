@@ -24,7 +24,6 @@ public class JumbleModelProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(JumbleItems.CELESTIUM, Models.GENERATED);
-        itemModelGenerator.register(JumbleItems.CELESTIUM_INGOT, Models.GENERATED);
         itemModelGenerator.register(JumbleItems.CELESTIUM_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(JumbleItems.CELESTIUM_AXE, Models.HANDHELD);
         itemModelGenerator.register(JumbleItems.CELESTIUM_SHOVEL, Models.HANDHELD);

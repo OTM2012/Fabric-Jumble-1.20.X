@@ -2,11 +2,12 @@ package net.otm.jumble.item;
 
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
+import net.otm.jumble.block.JumbleBlocks;
 
 import java.util.function.Supplier;
 
 public enum JumbleToolMaterial implements ToolMaterial {
-    CELESTIUM(3,2031,9.0f,4.0f,15, () ->Ingredient.ofItems(JumbleItems.CELESTIUM_INGOT));
+    CELESTIUM(3,2031,9.0f,4.0f,15, () ->Ingredient.ofItems(JumbleBlocks.CELESTIUM_BLOCK));
 
     private final int miningLevel;
     private final int itemDurability;

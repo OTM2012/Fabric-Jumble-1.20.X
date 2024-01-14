@@ -6,12 +6,13 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.otm.jumble.Jumble;
+import net.otm.jumble.block.JumbleBlocks;
 
 import java.util.function.Supplier;
 
 public enum JumbleArmorMaterials implements ArmorMaterial {
     CELESTIUM("celestium", 25, new int[] {3, 8, 6, 3}, 19,
-            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2f, 0, () -> Ingredient.ofItems(JumbleItems.CELESTIUM_INGOT));
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2f, 0, () -> Ingredient.ofItems(JumbleBlocks.CELESTIUM_BLOCK));
     ;
 
     private final String name;

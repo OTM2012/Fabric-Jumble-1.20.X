@@ -13,8 +13,6 @@ import net.otm.jumble.item.custom.JumbleArmorItem;
 public class JumbleItems {
 
     public static final Item CELESTIUM = registerItem("celestium",new Item(new FabricItemSettings()));
-    public static final Item CELESTIUM_INGOT = registerItem("celestium_ingot",new Item(new FabricItemSettings()));
-
     public static final Item CELESTIUM_PICKAXE = registerItem("celestium_pickaxe",new PickaxeItem(JumbleToolMaterial.CELESTIUM,4,2f,new FabricItemSettings()));
     public static final Item CELESTIUM_AXE = registerItem("celestium_axe",new AxeItem(JumbleToolMaterial.CELESTIUM,4,2f,new FabricItemSettings()));
     public static final Item CELESTIUM_SHOVEL = registerItem("celestium_shovel",new ShovelItem(JumbleToolMaterial.CELESTIUM,4,2f,new FabricItemSettings()));
