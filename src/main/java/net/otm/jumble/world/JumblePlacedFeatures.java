@@ -23,8 +23,8 @@ public class JumblePlacedFeatures {
         var configuredFeatureRegistryEntryLookup = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, END_CELESTIUM_ORE_PLACED_KEY, configuredFeatureRegistryEntryLookup.getOrThrow(JumbleConfiguredFeatures.END_CELESTIUM_ORE_KEY),
-                JumbleOrePlacement.modifiersWithCount(1, // Veins per Chunk
-                        HeightRangePlacementModifier.uniform(YOffset.fixed(-80), YOffset.fixed(80))));
+                JumbleOrePlacement.modifiersWithCount(3, // Veins per Chunk
+                        HeightRangePlacementModifier.uniform(YOffset.fixed(0), YOffset.fixed(30))));
     }
 
     public static RegistryKey<PlacedFeature> registerKey(String name) {
