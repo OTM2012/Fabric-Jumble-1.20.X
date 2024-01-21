@@ -18,6 +18,7 @@ public class JumbleModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(JumbleBlocks.CELESTIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(JumbleBlocks.CELESTIUM_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(JumbleBlocks.CORRUPTED_PURPUR);
 
     }
 

@@ -28,6 +28,7 @@ public class JumbleItemGroups {
                         entries.add(JumbleItems.CELESTIUM_CHESTPLATE);
                         entries.add(JumbleItems.CELESTIUM_LEGGINGS);
                         entries.add(JumbleItems.CELESTIUM_BOOTS);
+                        entries.add(JumbleBlocks.CORRUPTED_PURPUR);
                     }).build());
     public static void registerItemGroups() {
         Jumble.LOGGER.info("Registering Item Groups for " + Jumble.MOD_ID);

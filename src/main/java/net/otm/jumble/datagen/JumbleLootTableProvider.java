@@ -16,5 +16,6 @@ public class JumbleLootTableProvider extends FabricBlockLootTableProvider {
     public void generate() {
         addDrop(JumbleBlocks.CELESTIUM_BLOCK);
         addDrop(JumbleBlocks.CELESTIUM_ORE, oreDrops(JumbleBlocks.CELESTIUM_ORE, JumbleItems.CELESTIUM));
+        addDrop(JumbleBlocks.CORRUPTED_PURPUR);
     }
 }

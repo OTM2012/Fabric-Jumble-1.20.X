@@ -17,6 +17,8 @@ public class JumbleBlocks {
     public static final Block CELESTIUM_ORE = registerBlock("celestium_ore", new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(2f)));
     public static final Block CELESTIUM_BLOCK = registerBlock("celestium_block", new Block(FabricBlockSettings.copyOf(Blocks.END_STONE).strength(2f)));
 
+    public static final Block CORRUPTED_PURPUR = registerBlock("corrupted_purpur", new Block(FabricBlockSettings.copyOf(Blocks.PURPUR_BLOCK).strength(2f)));
+
 
     private static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
