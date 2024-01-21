@@ -17,5 +17,8 @@ public class JumbleLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(JumbleBlocks.CELESTIUM_BLOCK);
         addDrop(JumbleBlocks.CELESTIUM_ORE, oreDrops(JumbleBlocks.CELESTIUM_ORE, JumbleItems.CELESTIUM));
         addDrop(JumbleBlocks.CORRUPTED_PURPUR);
+        addDrop(JumbleBlocks.CORRUPTED_PURPUR_STAIRS);
+        addDrop(JumbleBlocks.CORRUPTED_PURPUR_SLAB);
+        addDrop(JumbleBlocks.CORRUPTED_PURPUR_WALL);
     }
 }

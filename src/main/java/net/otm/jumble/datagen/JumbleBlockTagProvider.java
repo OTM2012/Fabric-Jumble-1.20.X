@@ -22,11 +22,17 @@ public class JumbleBlockTagProvider extends FabricTagProvider.BlockTagProvider {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
                 .add(JumbleBlocks.CELESTIUM_BLOCK)
                 .add(JumbleBlocks.CELESTIUM_ORE)
-                        .add(JumbleBlocks.CORRUPTED_PURPUR);
+                .add(JumbleBlocks.CORRUPTED_PURPUR)
+                .add(JumbleBlocks.CORRUPTED_PURPUR_STAIRS)
+                .add(JumbleBlocks.CORRUPTED_PURPUR_SLAB)
+                .add(JumbleBlocks.CORRUPTED_PURPUR_WALL);
 
         getOrCreateTagBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(JumbleBlocks.CELESTIUM_BLOCK)
                 .add(JumbleBlocks.CELESTIUM_ORE);
+
+        getOrCreateTagBuilder(BlockTags.WALLS)
+                .add(JumbleBlocks.CORRUPTED_PURPUR_WALL);
 
 
     }

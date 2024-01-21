@@ -78,5 +78,19 @@ public class JumbleRecipeProvider extends FabricRecipeProvider {
 
         SmithingTransformRecipeJsonBuilder.create(Ingredient.ofItems(JumbleItems.CELESTIUM_UPGRADE_SMITHING_TEMPLATE), Ingredient.ofItems(Items.DIAMOND_BOOTS),Ingredient.ofItems(JumbleBlocks.CELESTIUM_BLOCK), RecipeCategory.MISC, JumbleItems.CELESTIUM_BOOTS)
                 .criterion(hasItem(JumbleBlocks.CELESTIUM_BLOCK), conditionsFromItem(JumbleBlocks.CELESTIUM_BLOCK)).offerTo(exporter, new Identifier(Jumble.MOD_ID, "celestium_boots_smithing"));
+
+        //Corrupted Purpur Block Recipes
+
+        //Corrupted Purpur Stairs
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC,JumbleItems.CELESTIUM_UPGRADE_SMITHING_TEMPLATE,4)
+                .pattern("ABB")
+                .pattern("AAB")
+                .pattern("AAA")
+                .input('A', JumbleBlocks.CORRUPTED_PURPUR)
+                .input('B', Blocks.AIR)
+                .criterion(hasItem(JumbleBlocks.CORRUPTED_PURPUR), conditionsFromItem(JumbleBlocks.CORRUPTED_PURPUR))
+                .criterion(hasItem(Blocks.AIR), conditionsFromItem(Blocks.AIR))
+                .offerTo(exporter, new Identifier(getRecipeName(JumbleBlocks.CORRUPTED_PURPUR_STAIRS)));
+
     }
 }

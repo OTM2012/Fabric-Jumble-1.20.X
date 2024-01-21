@@ -2,6 +2,7 @@ package net.otm.jumble.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
@@ -16,9 +17,16 @@ public class JumbleModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+
+        BlockStateModelGenerator.BlockTexturePool corruptedPurpurPool = blockStateModelGenerator.registerCubeAllModelTexturePool(JumbleBlocks.CORRUPTED_PURPUR);
+
         blockStateModelGenerator.registerSimpleCubeAll(JumbleBlocks.CELESTIUM_BLOCK);
         blockStateModelGenerator.registerSimpleCubeAll(JumbleBlocks.CELESTIUM_ORE);
-        blockStateModelGenerator.registerSimpleCubeAll(JumbleBlocks.CORRUPTED_PURPUR);
+        //blockStateModelGenerator.registerSimpleCubeAll(JumbleBlocks.CORRUPTED_PURPUR);
+
+        corruptedPurpurPool.stairs(JumbleBlocks.CORRUPTED_PURPUR_STAIRS);
+        corruptedPurpurPool.slab(JumbleBlocks.CORRUPTED_PURPUR_SLAB);
+        corruptedPurpurPool.wall(JumbleBlocks.CORRUPTED_PURPUR_WALL);
 
     }
 
